@@ -20,6 +20,8 @@ func main(){
 	defer conn.Close()
 
 	c:=pb.NewCalculatorServiceClient(conn)
-	doPrimes(c)
+	//doAdd(c)
+	//doPrimes(c)
+	doAvg(c)
 
 }

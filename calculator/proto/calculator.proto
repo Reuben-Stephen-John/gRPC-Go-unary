@@ -7,8 +7,10 @@ package calculator;
 option go_package="github.com/Reuben-Stephen-John/grpc-unary/calculator/proto";
 import "add.proto";
 import "primes.proto";
+import "avg.proto";
 
 service CalculatorService{
     rpc Add(SumRequest) returns (SumResponse);
     rpc Primes(PrimeRequest) returns (stream PrimeResponse);
+    rpc Avg(stream AvgRequest) returns (AvgResponse);
 }
