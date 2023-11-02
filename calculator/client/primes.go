@@ -8,7 +8,7 @@ import (
 	pb "github.com/Reuben-Stephen-John/grpc-unary/calculator/proto"
 )
 
-func doPrimes(c pb.CalculatorServiceClient) {
+func doPrimes(c pb.CalculatorServiceClient){
 	log.Println("doPrimes was invoked")
 	req := &pb.PrimeRequest{
 		Number: 12390392840,
